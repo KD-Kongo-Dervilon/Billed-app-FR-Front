@@ -68,7 +68,7 @@ describe("Given I am connected as an employee", () => {
       const btn = screen.getByTestId("btn-new-bill")// recupération du boutton
       const handleClickNewBill = jest.fn(() => newBills.handleClickNewBill)// btn element inside handleclick
       btn.addEventListener('click', handleClickNewBill)//mise en place de l'evenment click
-      userEvent.click(btn) // click sur le bouton
+      userEvent.click(btn) // click sur le bouuton
       expect(handleClickNewBill).toHaveBeenCalled() // la fonction est elle bien appelée ?
       expect(screen.getByText('Envoyer une note de frais')).toBeTruthy() // les élements affichés sont il les bons
     })
